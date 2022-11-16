@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AchievementsExpanded.AchievementDef>
+		<defName>MorrowRim_AchievementEbony</defName>
+		<label>Pride of Raven Rock</label>
+		<description>Obtain 4,000 pieces of volcanic ebony</description>
+		<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+		<tab>MorrowRim_AchievementsTab</tab>
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>MorrowRim_Ebony</def>
+			<count>4000</count>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementEbony</texPath>
+		<points>75</points>
+	</AchievementsExpanded.AchievementDef>
+	<AchievementsExpanded.AchievementDef>
+		<defName>MorrowRim_AchievementGlassSeller</defName>
+		<label>Wealth Beyond Measure</label>
+		<description>Earn 100,000 silver from selling volcanic glass</description>
+		<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+		<tab>MorrowRim_AchievementsTab</tab>
+		<tracker Class="AchievementsExpanded.TraderTracker">
+			<def>MorrowRim_Glass</def>
+			<count>100000</count>
+			<singleTransaction>false</singleTransaction>
+		</tracker>
+		<texPath>Achievements/MorrowRim_AchievementGlassSeller</texPath>
+		<points>75</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

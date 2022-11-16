@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Glass, defensive stats of plasteel, wealth of gold, lighter -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>MorrowRim_Glass</defName>
+		<label>volcanic glass</label>
+		<description>A rare volcanic glass found deep underground. Raw glass is slightly translucent and suprisingly brittle, once worked with it loses its translucency and becomes much sturdier. Highly sought after due to its beauty that almost puts gold to shame.\n\nDefensive and offensive stats are similar to that of plasteel, but far lighter and less durable.</description>
+		<graphicData>
+			<texPath>Things/Items/Resources/MorrowRim_Glass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Mass>0.10</Mass>
+			<StuffPower_Armor_Sharp>1.14</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.55</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.85</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>0.3</deepCommonality>
+		<deepCountPerPortion>7</deepCountPerPortion>
+		<deepLumpSizeRange>2~10</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<stuffAdjective>volcanic glass</stuffAdjective>
+			<categories>
+				<li>Metallic</li>
+				<li>Stony</li>
+			</categories>
+			<commonality>0.02</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(82,142,97)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>10</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>2.0</MaxHitPoints>
+				<Beauty>4</Beauty>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_CooldownMultiplier>0.6</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+	<!-- Ebony, defensive stats of plasteel, wealth of gold, heavier slower but more damage and armour -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>MorrowRim_Ebony</defName>
+		<label>volcanic ebony</label>
+		<description>A rare volcanic glass found deep underground. Raw ebony has a purple hew and is rather heavy, retaining this heaviness after working but becoming much darker. Highly sought after due to its beauty that almost puts gold to shame.\n\nDefensive and offensive stats are slightly higher than plasteel, but far heavier.</description>
+		<graphicData>
+			<texPath>Things/Items/Resources/MorrowRim_Ebony</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<Mass>0.65</Mass>
+			<StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.85</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>0.3</deepCommonality>
+		<deepCountPerPortion>7</deepCountPerPortion>
+		<deepLumpSizeRange>2~10</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<stuffAdjective>volcanic ebony</stuffAdjective>
+			<categories>
+				<li>Metallic</li>
+				<li>Stony</li>
+			</categories>
+			<commonality>0.05</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<color>(36,29,38)</color>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>10</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>3.0</MaxHitPoints>
+				<Beauty>4</Beauty>
+				<Flammability>0.2</Flammability>
+				<WorkToMake>2.2</WorkToMake>
+				<WorkToBuild>2.2</WorkToBuild>
+				<MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

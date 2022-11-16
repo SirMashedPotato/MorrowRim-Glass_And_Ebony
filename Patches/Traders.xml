@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MorrowRim_Glass</thingDef>
+				<countRange>20~60</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MorrowRim_Ebony</thingDef>
+				<countRange>20~60</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_PirateMerchant"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MorrowRim_Glass</thingDef>
+				<countRange>-20~40</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MorrowRim_Ebony</thingDef>
+				<countRange>-20~40</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MorrowRim_Glass</thingDef>
+				<countRange>-30~30</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MorrowRim_Ebony</thingDef>
+				<countRange>-30~30</countRange>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

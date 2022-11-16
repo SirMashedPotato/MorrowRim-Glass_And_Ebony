@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MorrowRim_MineableGlass</defName>
+		<label>volcanic glass node</label>
+		<description>A node of raw glass. Can be mined for glass, a highly sought after metal. Takes awhile to mine, as raw glass is easily damaged by mining picks.</description>
+		<graphicData>
+		  <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <color>(82,142,97)</color>
+		  <colorTwo>(133,195,146)</colorTwo>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>6000</MaxHitPoints>
+		</statBases>
+		<building>
+		  <isResourceRock>true</isResourceRock>
+		  <mineableThing>MorrowRim_Glass</mineableThing>
+		  <mineableYield>50</mineableYield>
+		  <mineableScatterCommonality>0.04</mineableScatterCommonality>
+		  <mineableScatterLumpSizeRange>10~40</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>MorrowRim_MineableEbony</defName>
+		<label>volcanic ebony node</label>
+		<description>A node of raw ebony. Can be mined for ebony, a highly sought after metal. Takes awhile to mine, as mining picks are easily damaged by raw ebony.</description>
+		<graphicData>
+		  <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <color>(82,66,87)</color>
+		  <colorTwo>(8,8,8)</colorTwo>
+		</graphicData>
+		<statBases>
+		  <MaxHitPoints>10000</MaxHitPoints>
+		</statBases>
+		<building>
+		  <isResourceRock>true</isResourceRock>
+		  <mineableThing>MorrowRim_Ebony</mineableThing>
+		  <mineableYield>60</mineableYield>
+		  <mineableScatterCommonality>0.04</mineableScatterCommonality>
+		  <mineableScatterLumpSizeRange>10~40</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+</Defs>

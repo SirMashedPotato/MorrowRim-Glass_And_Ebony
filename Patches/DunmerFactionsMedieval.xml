@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>MorrowRim - Dunmer Factions Medieval Edition</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Make MorrowRim_MeleeWeapon_OrdinatorScimitar craftable -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_MeleeWeapon_OrdinatorScimitar"]</xpath>
+					<value>
+						<smeltable>true</smeltable>
+						<costList>
+						  <MorrowRim_Ebony>30</MorrowRim_Ebony>
+						  <Steel>15</Steel>
+						  <Gold>1</Gold>
+						</costList>
+						<recipeMaker>
+						  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+						  <workSkill>Crafting</workSkill>
+						  <effectWorking>Smith</effectWorking>
+						  <soundWorking>Recipe_Smith</soundWorking>
+						  <skillRequirements>
+						  <Crafting>10</Crafting>
+						  </skillRequirements>
+						  <recipeUsers>
+							<li>MorrowRim_DunmerForge</li>
+							<li>MorrowRim_ElectricDunmerForge</li>
+						  </recipeUsers>
+						  <researchPrerequisite>MorrowRim_DunmerArmoryAdvanced</researchPrerequisite>
+						</recipeMaker>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_MeleeWeapon_OrdinatorScimitar"]/statBases</xpath>
+					<value>
+						<WorkToMake>20000</WorkToMake>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_MeleeWeapon_OrdinatorScimitar"]/statBases/MarketValue</xpath>
+				</li>
+				
+				<!-- Make MorrowRim_MeleeWeapon_OrdinatorMace craftable -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_MeleeWeapon_OrdinatorMace"]</xpath>
+					<value>
+						<smeltable>true</smeltable>
+						<costList>
+						  <MorrowRim_Ebony>30</MorrowRim_Ebony>
+						  <Steel>25</Steel>
+						  <Gold>1</Gold>
+						</costList>
+						<recipeMaker>
+						  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+						  <workSkill>Crafting</workSkill>
+						  <effectWorking>Smith</effectWorking>
+						  <soundWorking>Recipe_Smith</soundWorking>
+						  <skillRequirements>
+						  <Crafting>10</Crafting>
+						  </skillRequirements>
+						  <recipeUsers>
+							<li>MorrowRim_DunmerForge</li>
+							<li>MorrowRim_ElectricDunmerForge</li>
+						  </recipeUsers>
+						  <researchPrerequisite>MorrowRim_DunmerArmoryAdvanced</researchPrerequisite>
+						</recipeMaker>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_MeleeWeapon_OrdinatorMace"]/statBases</xpath>
+					<value>
+						<WorkToMake>16000</WorkToMake>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_MeleeWeapon_OrdinatorMace"]/statBases/MarketValue</xpath>
+				</li>
+				
+				<!-- edit weaponMoney to account for change in value -->
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/PawnKindDef[defName = "DunmerMedieval_Ordinator" or defName = "DunmerMedieval_HighOrdinator"]/weaponMoney</xpath>
+					<value>
+						<weaponMoney>865~950</weaponMoney>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

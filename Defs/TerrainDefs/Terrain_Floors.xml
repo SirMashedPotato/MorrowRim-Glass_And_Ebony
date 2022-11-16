@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="TileMetalBase">
+		<defName>MorrowRim_GlassTile</defName>
+		<label>glass tile</label>
+		<renderPrecedence>242</renderPrecedence>
+		<description>For overbearing extravagance, nothing beats glass tiles. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
+		<color>(82,142,97)</color>
+		<statBases>
+		  <Beauty>10</Beauty>
+		  <WorkToBuild>800</WorkToBuild>
+		  <Cleanliness>0.2</Cleanliness>
+		</statBases>
+		<costList>
+		  <MorrowRim_Glass>7</MorrowRim_Glass>
+		</costList>
+		<designationHotKey>Misc3</designationHotKey>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<tags>
+		  <li>FineFloor</li>
+		</tags>
+	</TerrainDef>
+
+
+	<TerrainDef ParentName="TileMetalBase">
+		<defName>MorrowRim_EbonyTile</defName>
+		<label>ebony tile</label>
+		<renderPrecedence>242</renderPrecedence>
+		<description>For overbearing extravagance, nothing beats ebony tiles. They are exceptionally expensive, and exceptionally beautiful, and people will think you're exceptionally snobbish if you actually live on them.</description>
+		<color>(36,29,38)</color>
+		<statBases>
+		  <Beauty>10</Beauty>
+		  <WorkToBuild>800</WorkToBuild>
+		  <Cleanliness>0.2</Cleanliness>
+		</statBases>
+		<costList>
+		  <MorrowRim_Ebony>7</MorrowRim_Ebony>
+		</costList>
+		<designationHotKey>Misc3</designationHotKey>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<tags>
+		  <li>FineFloor</li>
+		</tags>
+	</TerrainDef>
+
+</Defs>
